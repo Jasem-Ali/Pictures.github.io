@@ -1,5 +1,7 @@
-if (window.navigator.userAgent.toLowerCase().includes("mobi"))
-    window.location.href = "./mobile.html";
+function mobileRedirect() {
+    if (window.navigator.userAgent.toLowerCase().includes("mobi"))
+        window.location.href = "./mobile.html";
+}
 
 let options = document.getElementById("options");
 
