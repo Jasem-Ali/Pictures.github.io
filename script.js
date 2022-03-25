@@ -1,6 +1,3 @@
-if (window.navigator.userAgent.toLowerCase().includes("mobi"))
-    window.location.href = "./mobile.html";
-
 let options = document.getElementById("options");
 
 let car = document.getElementById("car");
