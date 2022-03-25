@@ -1,5 +1,5 @@
 if (window.navigator.userAgent.toLowerCase().includes("mobi"))
-    window.location.href = "/mobile.html";
+    window.location.href = "./mobile.html";
 
 let options = document.getElementById("options");
 
