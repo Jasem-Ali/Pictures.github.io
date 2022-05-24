@@ -60,7 +60,7 @@
         </h1>
 
         <p> Or, give me ideas first :) </p>
-        <form class="gform" method="POST" data-email="sixpaths63@gmail.com"
+        <form class="gform" method="POST" data-email="sixpaths63@gmail.com" onsubmit="loading()"
             action="https://script.google.com/macros/s/AKfycbyXIFtWjittyezQG8H-MigTxcTi0PM8WnHSbtSIzjilSMCJb3h1ZAWt2gv5PcYUXlhAeQ/exec">
             <p>Name: <input type="text" name="name" value="" size="21" required
                     placeholder="Required, but you can bs it">
@@ -70,7 +70,7 @@
                 placeholder="Required, but please don't bs this one :')"></textarea>
 
             <br>
-            <input type="submit" value="Send">
+            <input type="submit" id="sendBtn" value="Send">
         </form>
 
         <br>
@@ -162,6 +162,15 @@
         function previous() {
             page1.style.display = "";
             page2.style.display = "none";
+        }
+
+        function loading() {
+            let loadingText = document.createElement("div");
+            loadingText.textContent = "Please wait. Your response is being processed...";
+            loadingText.style.display = "inline";
+
+            document.querySelector("form").appendChild(loadingText);
+            document.getElementById("sendBtn").disabled = true;
         }
     </script>
 
