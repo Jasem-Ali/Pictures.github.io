@@ -123,7 +123,7 @@
                         if (selectedAll) {
                             nextBtn.disabled = false;
                             Object.assign(nextBtn.style, { "color": "red", "fontWeight": "bold" });
-                            alert("Next page button unlocked!");
+                            setTimeout(function () { alert("Next page button unlocked!") }, 100); // 100 ms delay
                             remainingText.innerHTML = "You can now click this button."
                         }
                         else {
